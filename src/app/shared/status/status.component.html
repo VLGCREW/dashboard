@@ -1,0 +1,6 @@
+<div class="{{ getClass() }}" (click)="onClick()">
+  <h1>{{ value }}</h1>
+  <h2 *ngIf="date">
+    {{ date | date: 'dd/MM/yyyy'}}
+  </h2>
+</div>
