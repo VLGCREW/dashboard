@@ -9,6 +9,7 @@ export class DashboardComponent implements OnInit {
 
   initialStatus : string = "Pending";
   releaseDate: Date = new Date();
+  app: string = 'Vueling.Crew';
 
   constructor() { }
 

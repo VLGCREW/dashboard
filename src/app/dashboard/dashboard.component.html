@@ -32,8 +32,9 @@
 			<app-status element="item" [value]="initialStatus"></app-status>
   </div>
   <div id="row6" class="column">
-      <app-status class="environment" element="environment" value=""></app-status>
-			<app-status class="bigger" value="VERIFICAR TABLAS SQL [INT vs PRE]"></app-status>
+      <app-status class="bigger special" element="item-right" value="VERIFICAR TABLAS SQL [INT vs PRE]"></app-status>
+      <app-status element="item" [value]="initialStatus"></app-status>
+      <app-status element="item"></app-status>
   </div>
   <div id="row6" class="column">
       <app-status class="environment" element="environment" value="PRO A" [date]="releaseDate"></app-status>
@@ -52,22 +53,21 @@
 			<app-status element="item" [value]="initialStatus"></app-status>
   </div>
   <div id="row8" class="column">
-			<app-status class='last' element="item"></app-status>
-			<app-status class='last' element="item"></app-status>
-			<div class="item releseEnded last">
-				<label class="label">
-					<input  class="label__checkbox" type="checkbox" />
-					<span class="label__text">
-					  <span class="label__check">
-						<i class="fa fa-check icon"></i>
-					  </span>
-					</span>
-				  </label>
-      </div>
-      <app-status element="iop" value="IOP General 60654"></app-status>
-			<div class="item last release" style="max-width:100%">
-				<h1 id="releaseDate" class="center"></h1>
-			</div>
+      <app-status class='last' element="item"></app-status>
+      <app-status class='last' element="item"></app-status>
+      <app-status class="last iop" element="iop" value="IOP General 60654">
+          <label class="label">
+              <input  class="label__checkbox" type="checkbox" />
+              <span class="label__text">
+                <span class="label__check">
+                <i class="fa fa-check icon"></i>
+                </span>
+              </span>
+          </label>
+      </app-status>
+      <app-status class="last bigger release" element="release" value="RELEASE" [date]="releaseDate">
+        <h3 class="apps"> {{ app }} </h3>
+      </app-status>
 	</div>
 </div>
 

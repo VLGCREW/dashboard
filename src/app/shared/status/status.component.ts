@@ -10,7 +10,7 @@ export class StatusComponent implements OnInit {
   @Input() value: string;
   @Input() date: Date;
   @Input() element: string;
-  values = ['Pending', 'In Progress', 'Fixing', 'Done'];
+  values = ['none', 'Pending', 'In Progress', 'Fixing', 'Done'];
 
   constructor() { }
 
