@@ -8,7 +8,7 @@
       <app-status class="header" element="header" value="Regressive"></app-status>
   </div>
   <div id="row2" class="column">
-      <app-status class="environment" element="environment" value="INT" [date]="releaseDate"></app-status>
+      <app-status class="environment" element="environment" value="INT" [date]="releaseDateINT"></app-status>
 			<app-status element="item" [value]="initialStatus"></app-status>
 			<app-status element="item" [value]="initialStatus"></app-status>
 			<app-status element="item" [value]="initialStatus"></app-status>
@@ -24,7 +24,7 @@
 			<app-status class="na" element="item"></app-status>
   </div>
   <div id="row4" class="column">
-      <app-status class="environment" element="environment" value="PRE" [date]="releaseDate"></app-status>
+      <app-status class="environment" element="environment" value="PRE" [date]="releaseDatePRE"></app-status>
 			<app-status element="item" [value]="initialStatus"></app-status>
 			<app-status element="item" [value]="initialStatus"></app-status>
 			<app-status element="item" [value]="initialStatus"></app-status>
@@ -66,7 +66,7 @@
           </label>
       </app-status>
       <app-status class="last bigger release" element="release" value="RELEASE" [date]="releaseDate">
-        <h3 class="apps"> {{ app }} </h3>
+        <h3 class="apps"> {{ apps }} </h3>
       </app-status>
 	</div>
 </div>

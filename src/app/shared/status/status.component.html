@@ -2,7 +2,7 @@
   <ng-content style="align-self: flex-end" select="label"></ng-content>
   <h1 *ngIf="element === 'release'">{{ value }} {{ date | date: 'dd/MM/yyyy'}}</h1>
   <h1 *ngIf="element !== 'release' && value !== 'none'"> {{ value }}</h1>
-  <h1 *ngIf="element !== 'release' && value === 'none'"> - </h1>
+  <h1 *ngIf="element !== 'release' && value === 'none'">&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;</h1>
   <h2 *ngIf="date && element !== 'release'">
     {{ date | date: 'dd/MM/yyyy'}}
   </h2>
